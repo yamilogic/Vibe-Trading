@@ -7,8 +7,8 @@
   "description": "Vibe-Trading Desktop (Unofficial Community Build)",
   "main": "dist/main.js",
   "scripts": {
-    "build": "tsc && node scripts/copy-static.mjs",
-    "start": "npm run build && npm run prepare:electron && electron .",
+    "build": "node init && tsc && node scripts/copy-static.mjs",
+    "start": "node init && npm run build && npm run prepare:electron && electron .",
     "test:locales": "npm run build && node scripts/test-locales.mjs",
     "test:backend-resolution": "npm run build && node scripts/test-backend-resolution.mjs",
     "test:update-safety": "npm run build && node scripts/test-update-safety.mjs",
