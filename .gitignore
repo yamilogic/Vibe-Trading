@@ -14,13 +14,11 @@ node_modules/
 # Backtest output artifacts
 results/
 
-.env
 agent/.env
 
 .claude/*
 !.claude/hooks.json
 CLAUDE.md
-.vscode/
 learn-claude-code-main/
 agent/sessions/
 agent/runs/
@@ -163,3 +161,7 @@ bench_report.json
 # Grounding ledger persisted by ad-hoc verification scripts into tests/
 agent/tests/artifacts/
 .idea/*
+branch_structure.json
+temp_auto_push.bat
+temp_interactive_push.bat
+config.bat
